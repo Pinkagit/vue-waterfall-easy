@@ -124,6 +124,7 @@
           :is="isRouterLink  && linkRange=='card' ? 'router-link' : 'alink'",
           :data-index="i",
           :to="linkRange=='card' ? v[hrefKey] : false")
+          slot(name="waterfall-top",:index="i",:value="v")
           component.img-wraper(
             v-if="v[srcKey]",
             :is="isRouterLink && linkRange=='img' ? 'router-link' :'alink'",
